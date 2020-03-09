@@ -30,6 +30,18 @@ body {
 	text-align: right;
 }
 
+.btn
+.title-font,
+.sub-title-font,
+.what-text-title,
+.text-body,
+.work-text-title,
+.skill-title,
+.skill-body,
+.footer-text {
+	font-family: 'Raleway';
+}
+
 .hedder {
 	position: fixed;
 	width: 100%;
@@ -119,6 +131,10 @@ body {
 	margin-left: 0;
 }
 
+.main {
+	padding-top: 75px;
+}
+
 .skill-img-contents {
 	margin-top: 70px;
 }
@@ -191,11 +207,11 @@ body {
 }
 
 .what-phone {
-	width: 40%;
+	width: 35%;
 }
 
 .what-text {
-	width: 60%;
+	width: 65%;
 }
 
 .btn,
