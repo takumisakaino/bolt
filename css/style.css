@@ -5,6 +5,10 @@ body {
 	background-color: #f2f2f2;
 }
 
+img {
+	vertical-align: bottom;
+}
+
 .clearfix::after {
 	content: "";
 	display: block;
@@ -12,14 +16,12 @@ body {
 }
 
 .sns-icon,
+.sns-box,
+.work-message,
 .what-phone,
 .what-text,
 .text-center {
   text-align: center;
-}
-
-.float-left {
-	float: left;
 }
 
 .pointer {
@@ -46,7 +48,6 @@ body {
 	position: fixed;
 	width: 100%;
 	padding: 15px 0;
-	background-color: #fff;
 	z-index: 1;
 }
 
@@ -76,29 +77,12 @@ body {
 	justify-content: space-between;
 }
 
-.work-message {
-	width: 756px;
-	padding-top: 90px;
-}
-
-.work-text-body {
-	width: 75%;
-	margin-right: 90px;
-}
-
-.work-list li {
-	float: left;
-	margin: 80px 100px 0 0;
+.work-list li a {
 	opacity: 0.7;
 }
 
-.work-list li:hover {
+.work-list li a:hover {
 	opacity: 1;
-}
-
-.skill-img-box {
-	display: inline-block;
-	margin-left: 180px;
 }
 
 .skill-body {
@@ -117,37 +101,28 @@ body {
 	margin: 0 auto;
 }
 
-.work-list li:first-child,
-.work-list li:nth-child(2),
-.work-list li:nth-child(3) {
-	margin-top: 0;
-}
-
-.work-list li:nth-child(3n) {
-	margin-right: 0;
-}
-
-.skill-img-box:first-child {
-	margin-left: 0;
-}
-
-.main {
-	padding-top: 75px;
-}
-
 .skill-img-contents {
 	margin-top: 70px;
 }
 
 .what-text-title {
-	margin-bottom: 35px;
+	margin-top: 20px;
 }
 
 .work-text-title {
 	margin-bottom: 40px;
 }
 
+.main {
+	padding-top: 75px;
+}
+
+.what-text-body {
+	padding: 35px 0 25px;
+}
+
 .mail-btn {
+	line-height: 43px;
 	padding: 14px 20px;
 }
 
@@ -194,10 +169,6 @@ body {
 	font-size: 45px;
 }
 
-.inner {
-	width: 1100px;
-}
-
 .text-box {
 	width: 650px;
 }
@@ -224,6 +195,7 @@ body {
 	background-color: #4e4e4e;
 }
 
+.hedder,
 .sns-icon:hover {
 	background-color: #fff;
 }
@@ -244,4 +216,127 @@ body {
 
 .btn:hover {
 	color: #333;
+}
+
+
+@media screen and (min-width:1200px) {
+	.inner {
+		width: 1100px;
+	}
+
+	.work-message {
+		width: 756px;
+		margin-top: 90px;
+	}
+
+	.work-list li {
+		float: left;
+		margin: 80px 100px 0 0;
+	}
+
+	.work-text-body {
+		width: 75%;
+		margin-right: 90px;
+	}
+
+	.work-list li:first-child,
+	.work-list li:nth-child(2),
+	.work-list li:nth-child(3) {
+		margin-top: 0;
+	}
+
+	.work-list li:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	.mail-btn-box,
+	.work-text-body {
+		float: left;
+	}
+
+	.skill-img-box:first-child {
+		margin-left: 0;
+	}
+
+	.skill-img-box {
+		display: inline-block;
+		margin-left: 180px;
+	}
+}
+
+@media screen and (max-width:1199px) {
+
+	.inner {
+		width: 97%;
+	}
+
+	.what-box {
+		display: block;
+	}
+
+	.what-phone,
+	.what-text {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.work-message,
+	.work-list li:nth-child(3n+1) {
+		margin-top: 80px;
+	}
+
+	.mail-btn-box {
+		margin-top: 40px;
+	}
+
+	.skill-img-box {
+		margin-bottom: 80px;
+	}
+
+	.skill-img-box:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width:767px) {
+
+	.title-box {
+		padding: 160px 0 130px;
+	}
+
+	.title-font {
+		font-size: 80px;
+	}
+
+	.sns-icon {
+		width: 100%;
+	}
+
+	.sns {
+		padding: 50px 0;
+	}
+
+	.header-btn {
+		display: none;
+	}
+
+	.hedder-hidden-btn,
+	.hedder-hidden-btn p {
+		border: solid 1px #ddd;
+	}
+
+	.hedder-hidden-btn {
+		width: 20px;
+		padding: 10px;
+		border-radius: 4px;
+		float: right;
+	}
+
+	.hedder-hidden-btn p {
+		margin-top: 4px;
+	}
+
+	.hedder-hidden-btn p:first-child {
+		margin-top: 0;
+	}
 }
