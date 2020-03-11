@@ -85,6 +85,12 @@ img {
 	opacity: 1;
 }
 
+.btn,
+.sns-icon,
+.work-list li a {
+	transition: all 0.5s;
+}
+
 .skill-body {
 	font-size: 16px;
 	margin-top: 16px;
